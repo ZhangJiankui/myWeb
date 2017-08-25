@@ -1,7 +1,7 @@
 <!--连接数据库-->
 <?php
 // 创建连接
-$conn = new mysqli("localhost", "root", "RootPasswd", "test_booksystem");
+$conn = new mysqli("localhost", "*****", "*****", "*****");
  
 // 检测连接
 if ($conn->connect_error) {
