@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>aboutSID</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>为什么知道我的学号和名字？</h1>
+<p><em>张建葵 2017/8/22 14:52:21</em></p>
+<hr />
+<p>That's a good quetion.<br />
+这都是在校内网里收集的。其细节将会如下表述：  </p>
+<ul>
+<li>为什么需要知道你的学号和名字；  </li>
+<li>怎么知道你的学号和名字；  </li>
+<li>相关代码。  </li>
+</ul>
+<p>总的来说，我们数据库里已经有了你的学号和名字。如果你嫌新建账户又要想密码太麻烦了，也可以用一个很简单的密码因为这里的用户并没有什么价值。不用担心你的隐私哦。  </p>
+<h2>为什么需要知道你的学号和名字？</h2>
+<ul>
+<li>这是深圳大学的校内网站基本上只允许深圳大学在校生使用；  </li>
+<li>单一学号只能注册单一账户应该可以防止重复注册；  </li>
+<li>开发者手痒想试试手。  </li>
+</ul>
+<h2>怎么知道你的学号和名字的？</h2>
+<p>在教务管理那里收集的。<br />
+当然了，现在没能力访问教务管理的数据。所以这里是在教务管理网站上对外公开的表格里一个一个收集的，具体过程如下：  </p>
+<p>在教务管理的学生信息那里有一个入口叫<code>在校生某专业学生名单</code>，如下图：  </p>
+<p><img src="images/aboutSID1.png" />  </p>
+<p>进入后可以看到：  </p>
+<p><img src="images/aboutSID2.png" />  </p>
+<p>and then<code>http://192.168.2.20/axsxx/xy1.asp</code>:  </p>
+<p><img src="images/aboutSID3.png" />  </p>
+<p>then<code>http://192.168.2.20/axsxx/xy2.asp</code>:  </p>
+<p><img src="images/aboutSID4.png" />  </p>
+<p>你们的信息就在这里啦。  </p>
+<p>当然不会去手动复制粘贴这辈子都不可能复制粘贴的，太多了而且毫无技术含量。所以只好写个小爬虫来自动地复制粘贴。小爬虫的目标是进入到上图的表格页面然后把上面的名单复制下来，所以下面将介绍如何进入到这个表格页面：  </p>
+<p>如下图可以看到表格页面的地址是：<code>http://192.168.2.20/axsxx/xy2.asp</code>:<br />
+<img src="images/aboutSID5.png" />  </p>
+<p>但是复制该网页进入会：<br />
+<img src="images/aboutSID6.png" /><br />
+原因是这个页面需要提交表单数据。  </p>
+<p>这个表单数据可以在这个表格网页的上一级网页<code>http://192.168.2.20/axsxx/xy1.asp</code>看到:<br />
+<img src="images/aboutSID7.png" /><br />
+如上图，下拉框的每一项对应一个<code>value</code>，这个<code>value</code>就是需要向<code>http://192.168.2.20/axsxx/xy2.asp</code>提交的表单数据了，其实表单数据除了这个<code>value</code>还有一个<code>submit</code>，如下图：<br />
+<img src="images/aboutSID8.png" /> <br />
+上图可以看到，表单数据有两项：  </p>
+<blockquote>
+<p>bh：&quot;202017%B8%DF%B7%D6%D7%D3%B2%C4%C1%CF%D3%EB%B9%A4%B3%CC&quot;<br />
+SUBMIT:&quot;%B2%E9%D1%AF&quot;  
+</p>
+</blockquote>
+<p>其中<code>bh</code>的值就是上上图中<code>value</code>的值，不是中文吗怎么变成一堆%号了？这是因为中文表单需要编码了才提交的。<br />
+而<code>SUBMIT</code>的值<code>%B2%E9%D1%AF</code>其实就是中文<code>提交</code>。  </p>
+<p><strong>所以这里就可以通过遍历<code>http://192.168.2.20/axsxx/xy1.asp</code>上的代码，对于每个<code>value</code>都生成一个表单值：</strong>  </p>
+<blockquote>
+<p>bh：<code>value</code>的值<br />
+SUBMIT:<code>提交</code>  
+</p>
+</blockquote>
+<p><strong>然后以<code>POST</code>的方式访问<code>http://192.168.2.20/axsxx/xy2.asp</code>，（同时还需要设置好cookie），这样就可以正确的向它提交表单，然后给你返回一个对应的表格页面。</strong>  </p>
+<p>然后问题就是怎么进入<code>http://192.168.2.20/axsxx/xy1.asp</code>了。  </p>
+<p>如果直接从浏览器上访问<code>http://192.168.2.20/axsxx/xy1.asp</code>，会这样：<br />
+<img src="images/aboutSID9.png" /><br />
+原因跟<code>http://192.168.2.20/axsxx/xy2.asp</code>的一样哦，显示的<em>202017高分子材料与工程</em>其实是上文同应该向<code>http://192.168.2.20/axsxx/xy2.asp</code>提交的表单<code>value</code>，浏览器会保留当前的表单信息直到被修改，下面将介绍如何发现、设置访问<code>http://192.168.2.20/axsxx/xy1.asp</code>的表单：  </p>
+<p>其实<code>http://192.168.2.20/axsxx/xy1.asp</code>的上一级页面是<code>http://192.168.2.20/axsxx/xy.asp</code>，不告诉你是怎么发现的。  </p>
+<p>同上文的很相似，<code>http://192.168.2.20/axsxx/xy.asp</code>的代码精华如下图：<br />
+<img src="images/aboutSID10.png" /> <br />
+这个其实是和上文一样的，我都不想再讲了。  </p>
+<p>同样的方法找到表单的值并设置表单然后正确访问<code>http://192.168.2.20/axsxx/xy1.asp</code>了。  </p>
+<h3>总结</h3>
+<p>其结构就是如下：<br />
+<img src="images/aboutSID11.png" />   </p>
+<ol>
+<li>遍历学院列表，获取每个<code>value</code>的值并由此向班级列表提交表单，由此获得每个学院的班级；  </li>
+<li>遍历某学院的班级列表，获取每个<code>value</code>的值并由此向学生列表提交表单，由此获得每个班级的学生列表；  </li>
+<li>遍历某班级的学生列表，并复制粘贴。  </li>
+</ol>
+<h2>相关代码</h2>
+<p>用Java实现的。不给你看。  </p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
