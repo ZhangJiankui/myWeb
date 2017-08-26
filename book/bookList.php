@@ -8,11 +8,13 @@ session_start();    //开始会话，记住状态
 
 <html>
     <head>
-        <title>查看书单</title>
+        <title>看看这书库</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
         <?php
         //检查是否登陆
         $isLogin = false;
@@ -76,7 +78,9 @@ session_start();    //开始会话，记住状态
         <br>
         <br>
         <br>
-        <a href="/about/about.html"><h2>关于我们</h2></a> 
-        <p>计软义工协会@copy left by no body</p> <br>
+        <h2><a href="/about/about.html">关于我们</a> </h2>
+        <p>计软义工协会@copy left by no body</p>
+        <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
+
     </body>
 </html>

@@ -7,16 +7,19 @@ session_start();    //开始回话，记住状态
 ?>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>登陆</title>
+        <title>我要登陆</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
 
         <?php
         $SID = $passwd = "";    //初始化为空
         $errMeg = "";
 
-//检测是否登录，若没登录则转向登录界面
+        //检测是否登录，若没登录则转向登录界面
         if (isset($_SESSION['SID'])) {
             echo '你已经登陆了';
             echo '可是直接返回上一页哦<br>';
@@ -40,10 +43,10 @@ session_start();    //开始回话，记住状态
                         $_SESSION['SID'] = $SID;
                         $expire = time() + 360; //cookie的有效时间
                         setcookie("user", "$SID", $expire); //设置cookie
-                        
+
                         if (!$conn->query("UPDATE  users SET lastLogin=now()  WHERE SID=$SID ")) {
-                            echo "更新登陆时间失败" . $conn->error.'<br>';
-                        } 
+                            echo "更新登陆时间失败" . $conn->error . '<br>';
+                        }
                         echo $SID, ' 欢迎你！进入 <a href="my.php">用户中心</a><br />';
                         echo '或者回到<a href="/index.php">主页</a><br />';
                         exit;
@@ -63,19 +66,20 @@ session_start();    //开始回话，记住状态
             密码: <input type="password" name="passwd" value = "<?php echo $passwd ?>"> </br>
             <input type="submit" value="提交">
         </form>
-<?php
-echo "<p style=\"color:red\">$errMeg</p>";
-?>
+        <?php
+        echo "<p style=\"color:red\">$errMeg</p>";
+        ?>
         <br>
         <br>
         <br>
         <a href="forget.php">忘记密码？</a> <br>
         嘤嘤嘤登陆好麻烦呀我要回到<a href="/index.php">主页</a> <br>
-        
+
         <br>
         <br>
         <br>
-        <a href="/about/about.html"><h2>关于我们</h2></a>
-        <p>计软义工协会@copy left by no body</p> <br>
+        <h2><a href="/about/about.html">关于我们</a> </h2>
+        <p>计软义工协会@copy left by no body</p>
+        <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
     </body>
 </html>

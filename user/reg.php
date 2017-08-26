@@ -2,12 +2,16 @@
 <!--
 这是计软义工的网站，没什么好说的
 -->
+
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>注册</title>
+        <title>我要注册</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
 
 
         <?php
@@ -104,8 +108,10 @@ if ($regFailed) {
         <br>
         <br>
         <br>
-        <a href="/about/about.html"><h2>关于我们</h2></a>
-        <p>计软义工协会@copy left by no body</p> <br>
+        <h2><a href="/about/about.html">关于我们</a> </h2>
+        <p>计软义工协会@copy left by no body</p>
+        <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
+
     </body>
 </html>
 

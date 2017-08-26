@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="net.sf.simpletest.eclipse.launcher.pulaunchconfig">
+<stringAttribute key="net.sf.simpletest.eclipse.PROJECT_ATTR" value=""/>
+<stringAttribute key="PhpFile" value=""/>
+</launchConfiguration>

@@ -1,0 +1,95 @@
+!SESSION 2017-08-18 12:56:52.755 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\wamp64\www -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Warnings while parsing the view contributions from the 'org.eclipse.ui.viewActions' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction4'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-18 12:56:53.739
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction4'
+
+!ENTRY org.eclipse.osgi 4 0 2017-08-18 12:58:50.926
+!MESSAGE While loading class "net.sourceforge.phpeclipse.PHPeclipsePlugin$3$1", thread "Worker-3" timed out waiting (5000ms) for thread "main" to finish starting bundle "net.sourceforge.phpeclipse". To avoid deadlock, thread "Worker-3" is proceeding but "net.sourceforge.phpeclipse.PHPeclipsePlugin$3$1" may not be fully initialized.
+!STACK 0
+java.lang.Exception: Generated exception.
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:77)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at net.sourceforge.phpeclipse.PHPeclipsePlugin$3.run(PHPeclipsePlugin.java:1182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.ui 4 4 2017-08-18 12:59:00.947
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY net.sourceforge.phpeclipse.webbrowser 1 0 2017-08-18 13:02:25.084
+!MESSAGE -true
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-18 13:33:24.759
+!MESSAGE An internal error occurred during: "Launching".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.SWT.error(SWT.java:3268)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:435)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:271)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:357)
+	at org.eclipse.jface.window.Window.createShell(Window.java:482)
+	at org.eclipse.jface.window.Window.create(Window.java:425)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1124)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.jface.dialogs.ErrorDialog.open(ErrorDialog.java:295)
+	at org.eclipse.jface.dialogs.ErrorDialog.openError(ErrorDialog.java:359)
+	at org.eclipse.jface.dialogs.ErrorDialog.openError(ErrorDialog.java:324)
+	at net.sf.simpletest.eclipse.launcher.TestLaunchConfigurationDelegate.launch(TestLaunchConfigurationDelegate.java:66)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:639)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-18 13:33:33.151
+!MESSAGE An internal error occurred during: "Launching".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.SWT.error(SWT.java:3268)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:435)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:271)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:357)
+	at org.eclipse.jface.window.Window.createShell(Window.java:482)
+	at org.eclipse.jface.window.Window.create(Window.java:425)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1124)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.jface.dialogs.ErrorDialog.open(ErrorDialog.java:295)
+	at org.eclipse.jface.dialogs.ErrorDialog.openError(ErrorDialog.java:359)
+	at org.eclipse.jface.dialogs.ErrorDialog.openError(ErrorDialog.java:324)
+	at net.sf.simpletest.eclipse.launcher.TestLaunchConfigurationDelegate.launch(TestLaunchConfigurationDelegate.java:66)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:639)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
