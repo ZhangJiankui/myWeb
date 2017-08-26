@@ -3,14 +3,18 @@
 这是计软义工的网站，没什么好说的
 -->
 <?php
-session_start();    //开始回话，记住状态
+session_start();    //开始会话，记住状态
 ?>
+
 <html>
     <head>
-        <meta charset="utf-8">
         <title>管理员登陆</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
 
         <?php
         $MID = $passwd = "";    //初始化为空
@@ -35,7 +39,7 @@ session_start();    //开始回话，记住状态
                 //要先判断$check_query有没料，不然会出警告
                 if (!is_bool($check_query) && $row = $check_query->fetch_assoc()) {
                     //如果密码正确
-                    
+
                     if (strcmp($row['passwd'], MD5($passwd)) == 0) {  //因为数据库里的密码是MD5过的
                         //登录成功
                         $_SESSION['MID'] = $MID;
@@ -46,10 +50,10 @@ session_start();    //开始回话，记住状态
                         echo '或者回到<a href="/index.php">主页</a><br />';
                         exit;
                     } else {   //如果密码不等
-                        $errMeg = "学号或密码错误";
+                        $errMeg = "工号或密码错误";
                     }
                 } else { //如果查无账户
-                    $errMeg = "学号或密码错误";
+                    $errMeg = "工号或密码错误";
                 }
             }
         }
@@ -61,19 +65,20 @@ session_start();    //开始回话，记住状态
             密码: <input type="password" name="passwd" value = "<?php echo $passwd ?>"> </br>
             <input type="submit" value="提交">
         </form>
-<?php
-echo "<p style=\"color:red\">$errMeg</p>";
-?>
+        <?php
+        echo "<p style=\"color:red\">$errMeg</p>";
+        ?>
         <br>
         <br>
         <br>
         <a href="forget.php">忘记密码？</a> <br>
         不搞了，回到<a href="/index.php">主页</a> <br>
-        
+
         <br>
         <br>
         <br>
-        <a href="/about/about.html"><h2>关于我们</h2></a>
-        <p>计软义工协会@copy left by no body</p> <br>
+        <h2><a href="/about/about.html">关于我们</a> </h2>
+        <p>计软义工协会@copy left by no body</p>
+        <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
     </body>
 </html>

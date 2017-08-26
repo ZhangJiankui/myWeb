@@ -8,11 +8,13 @@ session_start();    //开始会话，记住状态
 
 <html>
     <head>
-        <title>管理系统</title>
+        <title>某单借书</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
         <?php
         //检查是否登陆
         $isLogin = false;
@@ -126,7 +128,7 @@ session_start();    //开始会话，记住状态
                 exit;
             }
             ?>
-            <a href="/manager/manageBorrowList.php"><h2>返回</h2></a>
+            <h2><a href="/manager/manageBorrowList.php">返回</a></h2>
 
 
             <h2 style="color: red">下面是关于这单的操作，请谨慎操作哦</h2>
@@ -136,11 +138,12 @@ session_start();    //开始会话，记住状态
             <input type="submit" name="submit" value="归还确认" > <br><br>
 
         </form>
-        <a href="/index.php"><h2>主页</h2></a>
+        <h2><a href="/index.php">主页</a></h2>
         <br>
         <br>
         <br>
-        <a href="/about/about.html"><h2>关于我们</h2></a> 
-        <p>计软义工协会@copy left by no body</p> <br>
+        <h2><a href="/about/about.html">关于我们</a> </h2>
+        <p>计软义工协会@copy left by no body</p>
+        <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
     </body>
 </html>
