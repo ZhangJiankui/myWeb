@@ -14,7 +14,7 @@ session_start();    //开始会话，记住状态
         <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
-        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="380" height="101" /> </a><br>
         <h1>还未来得及开发</h1>
         你可以返回<a href="/index.php">主页</a> <br>
         可以向他催更： <br>

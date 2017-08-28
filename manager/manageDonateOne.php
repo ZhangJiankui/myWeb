@@ -14,7 +14,7 @@ session_start();    //开始会话，记住状态
         <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
-        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="380" height="101" /> </a><br>
         <?php
         //检查是否登陆
         $isLogin = false;
@@ -84,7 +84,7 @@ session_start();    //开始会话，记住状态
                 } else {
                     echo '不明请求';
                 }
-                echo '<a href="/manager/manageDonateList.php"><h2>返回</h2></a>';
+                echo '<h2><a href="/manager/manageDonateList.php">返回</a></h2>';
 
                 exit;
             }
@@ -106,6 +106,6 @@ session_start();    //开始会话，记住状态
 
             <h2><a href="/about/about.html">关于我们</a> </h2>
             <p>计软义工协会@copy left by no body</p>
-            <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
+            <p>powered by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
             </body>
             </html>

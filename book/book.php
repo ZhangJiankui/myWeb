@@ -14,7 +14,7 @@ session_start();    //开始会话，记住状态
         <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
-        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="380" height="101" /> </a><br>
         <h1>这是书库主页哦</h1>
         <?php
         //检查是否登陆

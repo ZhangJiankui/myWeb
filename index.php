@@ -15,7 +15,7 @@ session_start();    //开始会话，记住状态
         <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
-        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="380" height="101" /> </a><br>
         <!--<h1>这是计软义工协会的网站主页哦</h1>-->
 
         <?php
@@ -39,7 +39,7 @@ session_start();    //开始会话，记住状态
 
 
 
-        <h2><a href="/about/aboutUSE.html">怎么使用这个网站</a> </h2>
+        <h2><a href="/about/aboutUSE.php">怎么使用这个网站</a> </h2>
         <h2><a href="book/book.php">计软书库</a> </h2>
         <h2><a href="other/other.php">其他功能</a></h2>
         <br>
@@ -49,7 +49,7 @@ session_start();    //开始会话，记住状态
         <h2><a href="https://zhangjiankui.gitbooks.io/myweb/content/">网站开发文档</a></h2>
         <h2><a href="/about/about.html">关于我们</a> </h2>
         <p>计软义工协会@copy left by no body</p>
-        <p>power by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
+        <p>powered by 计软义工技术部</p><img src="/images/tech.gif" /> <br>
     </body>
 </html>
 

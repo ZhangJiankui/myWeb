@@ -13,7 +13,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="/stylesheet/mainstyle.css" />
     </head>
     <body>
-        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="634" height="168" /> </a><br>
+        <a href="/index.php" ><img src="/images/logo.png" alt="深大计软义工协会" width="380" height="101" /> </a><br>
         <h1>我们也不知道你的密码</h1> 
         你可以返回<a href="/index.php">主页</a> <br>      
         或者找他试试看： <br>
